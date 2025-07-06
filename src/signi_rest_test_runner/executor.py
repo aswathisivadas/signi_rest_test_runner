@@ -43,7 +43,7 @@ def execute_step(step: dict) -> dict:
         extract_variables(response, step['extract'])
 
     return {
-        'step': step['name'],
+        'name': step['name'],
         'request': request,
         'response': {
             'status_code': response.status_code,

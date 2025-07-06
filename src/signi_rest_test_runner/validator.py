@@ -1,7 +1,7 @@
 # ---- validator.py ----
 def validate_scenario(results: list):
     for result in results:
-        step_name = result['step']
+        step_name = result['name']
         response = result['response']
         expected = result.get('assert', {})
 

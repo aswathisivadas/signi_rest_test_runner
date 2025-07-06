@@ -1,0 +1,10 @@
+name: Hello API Test
+steps:
+  - name: Check Hello Message
+    request:
+      method: GET
+      url: http://127.0.0.1:5000/hello
+    response:
+      status_code: 200
+      body:
+        message: "Hello from Aswathi's API!"
